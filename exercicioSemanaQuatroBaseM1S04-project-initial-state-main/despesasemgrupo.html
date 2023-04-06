@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Despesas em grupo</title>
+    <link rel="stylesheet" href="index.css"/>
+    <link rel="stylesheet" href="despesasemgrupo.css"/>
+    
+</head>
+<body>
+    
+    <header class = "header">
+        <a class ="paginaInicial" href="index.html">
+         
+
+            <h1>Despesa em grupo</h1>
+            <button id="open-modal-button">Despesas em grupo</button>
+            <button id="open-modal-button">Despesa individual</button>
+
+            <div id="form-modal" class="modal">
+            </div>
+          </header>
+
+           <!-- The Modal -->
+      <div id="form-modal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close">&times;</span>
+        
+
+          <div class="input-wrapper">
+            <label for="title"><b>Titulo</b></label>
+            <input
+              type="text"
+              placeholder="Escreva"
+              name="title"
+              id="title-input"
+              required
+            />
+          </div>
+         
+
+          <div class="input-wrapper">
+            <label for="participants"><b>Participantes</b></label>
+            <input
+              type="number"
+              placeholder="5"
+              name="participants"
+              id="participants-input"
+              required
+            />
+          </div>
+
+          <div class="input-wrapper">
+            <label for="amount"><b>Valor</b></label>
+            <input
+              type="number"
+              placeholder="50"
+              name="amount
+              id="amount-input"
+              required
+            />
+          </div>
+          
+
+          <button
+            type="submit"
+            onclick="addGroupExpense()"
+            id="add-new-group-expense-button"
+            class="add-new-financial-movement-button"
+          >
+            Adicionar
+          </button>
+        </div>
+      </div>
+
+          
+        
+           <main>
+              <div class= "table" id="group-expenses">
+              <div class="row">
+                  <div>Descricao</div>
+                  <div>Minha parte</div>
+                  <div>Valor total</div>
+              </div>
+              <!--div class = "row"-->
+              <!--   <div>Netflix</div>
+                <div>3</div>
+                <div>60</div> -->
+
+            <!--The Modal-->
+           </main>
+
+
+
+<script src="./index.js"></script>
+<script src="./FormModal/index.js"></script>
+
+
+</body>
+</html> 
